@@ -50,6 +50,23 @@ Average-salary-in-Ukraine-for-December-2025/  — Project data
 
 ![Average Salary in Ukraine](https://github.com/isachenko-andrii/Average-salary-in-Ukraine-for-December-2025/blob/main/images/Average-Salary.png)  
 
+## Example formula  
+  
+**Table name:** region_tbl  
+**Column name with regions:** Region  
+**Column name with values ​​for each region:** Value  
+  
+**The DAX formula for each region would look like this:**  
+
+  <code>
+Kyiv  lbl = 
+VAR CurrentRegion = "Kyiv"
+VAR CurrentValue = FORMAT(CALCULATE(SUM(region_tbl[Value]), region_tbl[Region] = CurrentRegion), "#,##0")
+VAR RegionExists = COUNTROWS(FILTER(region_tbl, region_tbl[Region] = CurrentRegion)) > 0
+RETURN
+    IF(RegionExists, IF(ISBLANK(CurrentValue) || CurrentValue = "0", CurrentRegion & ": 0", CurrentValue & " ₴ " ), CurrentRegion & ": No Data")
+  </code>
+  
  ## Contact  
     
 **Name:** [Andrii Isachenko](https://isachenko-andrii.github.io)    
