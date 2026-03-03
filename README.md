@@ -26,7 +26,7 @@ This project is dedicated to the visualization and analysis of the average wage 
   
 1. Download the `project.pbix` file from this repository.  
 2. Open it using [Power BI Desktop](https://powerbi.microsoft.com/desktop/).  
-- additionally download the map of Ukraine (Ukraine-regions.json) and the file with salary data ()  
+- additionally download the map of Ukraine (Ukraine-regions.json) and the file with salary data (szp.xlsx)  
 3. The project is available at the link.  
 
 ## Key findings (Insights)  
