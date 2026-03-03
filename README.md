@@ -18,7 +18,7 @@
   
 ## Acknowledgments    
 
- - Special thanks to [Nikita Tymoshenko](https://github.com/NickTimosh) for high-quality data analytics lessons in Ukrainian.
+ - Special thanks to [Nikita Tymoshenko](https://github.com/NickTimosh) for high-quality data analytics [lessons](https://github.com/Youtube-NikitaTymoshenko/PowerBI-UkraineMap/blob/main/README.md) in Ukrainian.
  - Thanks to the [Data Analyst/GoIT](https://goit.global/ua/courses/data-analytics/) course, which was part of this project.
 
 ---
