@@ -8,8 +8,15 @@
 ## Project Description  
   
 This project is dedicated to the visualization and analysis of the average wage level by region in Ukraine as of December 2025. The main goal is to identify economic disparities between regions and present the data in a user-friendly format using Power BI.  
-  
 
+## Tools  
+  
+* **Visualization:** Power BI Desktop  
+* **Cartography:** Custom TopoJSON map (for accurate representation of regional boundaries)  
+* **Data sources:** [Ministry of Finance (index.minfin.com.ua)](https://index.minfin.com.ua/ua/labour/salary/average/)  
+* **Data formats:** JSON (geodata), Excel (statistics)  
+
+  
 ## Visualization  
 
 ![Average Salary in Ukraine](https://github.com/isachenko-andrii/Average-salary-in-Ukraine-for-December-2025/blob/main/images/Average-Salary.png)  
