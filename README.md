@@ -40,8 +40,8 @@ This project is dedicated to the visualization and analysis of the average wage 
 **Average-salary-in-Ukraine-for-December-2025**/  — Project data  
 ├── data/ — Project data  
 ├── images/ — Project screenshots  
-├── Ukraine-regions.json — is the map file used for visualization  
-├── Project.pbix —  is the main file of the Power BI report  
+├── Ukraine-regions.json — Is the map file used for visualization  
+├── Project.pbix —  Is the main file of the Power BI report  
 ├── LICENSE — MIT License  
 ├── project-logo.png — Project cover  
 └── README.md — Project documentation   
