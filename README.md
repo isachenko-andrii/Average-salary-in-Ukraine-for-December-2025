@@ -58,14 +58,12 @@ Average-salary-in-Ukraine-for-December-2025/  — Project data
   
 **The DAX formula for each region would look like this:**  
 
-  <code>
-Kyiv  lbl = 
+<code>Kyiv  lbl = 
 VAR CurrentRegion = "Kyiv"
 VAR CurrentValue = FORMAT(CALCULATE(SUM(region_tbl[Value]), region_tbl[Region] = CurrentRegion), "#,##0")
 VAR RegionExists = COUNTROWS(FILTER(region_tbl, region_tbl[Region] = CurrentRegion)) > 0
 RETURN
-    IF(RegionExists, IF(ISBLANK(CurrentValue) || CurrentValue = "0", CurrentRegion & ": 0", CurrentValue & " ₴ " ), CurrentRegion & ": No Data")
-  </code>
+    IF(RegionExists, IF(ISBLANK(CurrentValue) || CurrentValue = "0", CurrentRegion & ": 0", CurrentValue & " ₴ " ), CurrentRegion & ": No Data")</code>
   
  ## Contact  
     
