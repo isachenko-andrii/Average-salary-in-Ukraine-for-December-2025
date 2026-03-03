@@ -55,6 +55,8 @@ Average-salary-in-Ukraine-for-December-2025/  — Project data
 **Table name:** region_tbl  
 **Column name with regions:** Region  
 **Column name with values ​​for each region:** Value  
+
+To create a card displaying the average salary, we will use the following formula:  
   
 **The DAX formula for each region would look like this:**  
 
