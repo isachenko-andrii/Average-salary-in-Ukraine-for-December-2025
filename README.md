@@ -16,7 +16,32 @@ This project is dedicated to the visualization and analysis of the average wage 
 * **Data sources:** [Ministry of Finance (index.minfin.com.ua)](https://index.minfin.com.ua/ua/labour/salary/average/)  
 * **Data formats:** JSON (geodata), Excel (statistics)  
 
+## Main features of the dashboard  
   
+1. **Interactive map of Ukraine:** Color indication of income levels for each region.  
+2. **Comparative analysis:** Ability to quickly identify leading regions and regions with the lowest indicators.  
+3. **Tooltips:** When hovering over a region, the exact amount and deviation from the average indicator are displayed.  
+
+## How to view the project  
+  
+1. Download the `project.pbix` file from this repository.  
+2. Open it using [Power BI Desktop](https://powerbi.microsoft.com/desktop/).  
+- additionally download the map of Ukraine (Ukraine-regions.json) and the file with salary data ()  
+3. The project is available at the link.  
+
+## 📈 Key findings (Insights)
+* **Kyiv** remains the leader in terms of income, which is due to the high concentration of service and IT companies.
+* There is a positive trend in the western regions due to the development of logistics hubs.
+* ...
+
+## 📂 Repository structure  
+
+
+* `Average-Salary.pbix` is the main file of the Power BI report.
+* `Ukraine-regions.json` is the map file used for visualization.
+* `data/` is the folder with the source data.
+* `screenshots/` is the dashboard images for quick viewing.
+   
 ## Visualization  
 
 ![Average Salary in Ukraine](https://github.com/isachenko-andrii/Average-salary-in-Ukraine-for-December-2025/blob/main/images/Average-Salary.png)  
