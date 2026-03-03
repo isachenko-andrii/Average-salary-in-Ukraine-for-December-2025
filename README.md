@@ -5,6 +5,10 @@
   
 </div>
 
+## Project Description  
+  
+This project is dedicated to the visualization and analysis of the average wage level by region in Ukraine as of December 2025. The main goal is to identify economic disparities between regions and present the data in a user-friendly format using Power BI.  
+  
 
 ## Visualization  
 
