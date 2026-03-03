@@ -29,7 +29,7 @@ This project is dedicated to the visualization and analysis of the average wage 
 - additionally download the map of Ukraine (Ukraine-regions.json) and the file with salary data (szp.xlsx, to download the data correctly, place the file on your desktop)  
 3. The project is available at the link.  
 
-## Key findings (Insights)  
+## Key findings  
   
 * **Kyiv** remains the leader in terms of income, which is due to the high concentration of service and IT companies.  
 * There is a positive trend in the western regions due to the development of logistics hubs.  
