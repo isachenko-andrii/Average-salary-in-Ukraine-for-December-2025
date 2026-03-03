@@ -37,7 +37,7 @@ This project is dedicated to the visualization and analysis of the average wage 
   
 ## Repository structure  
   
-Average-salary-in-Ukraine-for-December-2025/  — Project data  
+**Average-salary-in-Ukraine-for-December-2025**/  — Project data  
 ├── data/ — Project data  
 ├── images/ — Project screenshots  
 ├── Ukraine-regions.json — is the map file used for visualization  
