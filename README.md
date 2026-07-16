@@ -1,4 +1,6 @@
-![Project-logo](https://github.com/isachenko-andrii/Average-salary-in-Ukraine-for-December-2025/blob/main/Project-logo.png)
+![Project-logo](https://github.com/isachenko-andrii/Average-salary-in-Ukraine-for-December-2025/blob/main/Project-logo.png)  
+#### [EN](https://github.com/isachenko-andrii/Average-salary-in-Ukraine-for-December-2025/blob/main/README.md) | [UA](https://github.com/isachenko-andrii/Average-salary-in-Ukraine-for-December-2025/blob/main/README-UA.md) This material is also available in Ukrainian.  
+---  
 <div align="center">  
     
 ## Average Salary in Ukraine for December 2025<br>(Data visualization with Power BI)   
