@@ -4,86 +4,91 @@
 ---  
 <div align="center">  
     
-## Average Salary in Ukraine for December 2025<br>(Data visualization with Power BI)   
+## Середня зарплата в Україні за грудень 2025 року<br>(Візуалізація даних за допомогою Power BI)   
   
 </div>
 
-## Project Description  
+## Опис проекту  
   
-This project is dedicated to the visualization and analysis of the average wage level by region in Ukraine as of December 2025. The main goal is to identify economic disparities between regions and present the data in a user-friendly format using Power BI.  
-
-## Tools  
+Цей проект присвячений візуалізації та аналізу рівня середньої заробітної плати за регіонами України станом на грудень 2025 року. Головною метою є виявлення економічних диспропорцій між регіонами та представлення даних у зручному для користувача форматі за допомогою Power BI.  
   
-* **Visualization:** Power BI Desktop  
-* **Cartography:** Custom TopoJSON map (for accurate representation of regional boundaries)  
-* **Data sources:** [Ministry of Finance (index.minfin.com.ua)](https://index.minfin.com.ua/ua/labour/salary/average/)  
-* **Data formats:** JSON (geodata), Excel (statistics)  
-
-## Main features of the dashboard  
+## Інструменти  
   
-1. **Interactive map of Ukraine:** Color indication of income levels for each region.  
-2. **Comparative analysis:** Ability to quickly identify leading regions and regions with the lowest indicators.  
-3. **Tooltips:** When hovering over a region, the exact amount and deviation from the average indicator are displayed.  
-
-## How to view the project  
+* **Візуалізація:** Power BI Desktop  
+* **Картографія:** Налаштована карта TopoJSON (для точного відображення регіональних меж)  
+* **Джерела даних:** [Міністерство фінансів (index.minfin.com.ua)](https://index.minfin.com.ua/ua/labour/salary/average/)  
+* **Формати даних:** JSON (геодані), Excel (статистика)  
   
-1. Download the `project.pbix` file from this repository.  
-2. Open it using [Power BI Desktop](https://powerbi.microsoft.com/desktop/).  
-- additionally download the map of Ukraine (Ukraine-regions.json) and the file with salary data (szp.xlsx, to download the data correctly, place the file on your desktop)  
-3. The project is available at the link.  
-
-## Key findings  
+## Основні можливості панелі інструментів  
   
-* **Kyiv** remains the leader in terms of income, which is due to the high concentration of service and IT companies.  
-* There is a positive trend in the western regions due to the development of logistics hubs.  
-* The abnormally high average salary in the Luhansk region in 2025 (which may even be higher than Kyiv's) is a classic statistical outlier caused by specific factors.  
+1. **Інтерактивна карта України:** Кольорове відображення рівнів доходів для кожного регіону.  
   
-## Repository structure  
+2. **Порівняльний аналіз:** Можливість швидко визначити провідні регіони та регіони з найнижчими показниками.  
   
-**Average-salary-in-Ukraine-for-December-2025**/  — Project data  
-├── data/ — Project data  
-├── images/ — Project screenshots  
-├── Ukraine-regions.json — Is the map file used for visualization  
-├── Project.pbix —  Is the main file of the Power BI report  
-├── LICENSE — MIT License  
-├── project-logo.png — Project cover  
-└── README.md — Project documentation   
+3. **Підказки:** При наведенні курсора на регіон відображається точна сума та відхилення від середнього показника.
+   
+## Як переглянути проєкт  
   
-## Visualization  
-
-![Average Salary in Ukraine](https://github.com/isachenko-andrii/Average-salary-in-Ukraine-for-December-2025/blob/main/images/Average-Salary.png)  
-
-## Example formula  
+1. Завантажте файл `project.pbix` з цього репозиторію.  
   
-**Table name:** region_tbl  
-**Column name with regions:** Region  
-**Column name with values ​​for each region:** Value  
-
-To create a card displaying the average salary, we will use the following formula:  
+2. Відкрийте його за допомогою [Power BI Desktop](https://powerbi.microsoft.com/desktop/).  
   
-**The DAX formula for each region would look like this:**  
-
-<code>Kyiv  lbl = 
-VAR CurrentRegion = "Kyiv"
-VAR CurrentValue = FORMAT(CALCULATE(SUM(region_tbl[Value]), region_tbl[Region] = CurrentRegion), "#,##0")
-VAR RegionExists = COUNTROWS(FILTER(region_tbl, region_tbl[Region] = CurrentRegion)) > 0
-RETURN
-    IF(RegionExists, IF(ISBLANK(CurrentValue) || CurrentValue = "0", CurrentRegion & ": 0", CurrentValue & " ₴ " ), CurrentRegion & ": No Data")</code>
+- додатково завантажте карту України (Ukraine-regions.json) та файл із даними про зарплати (szp.xlsx, для коректного завантаження даних розмістіть файл на робочому столі)  
   
- ## Contact  
+3. Проєкт доступний за [посиланням](https://github.com/isachenko-andrii/Average-salary-in-Ukraine-for-December-2025/blob/main/project.pbix).  
+  
+## Ключові висновки  
+  
+* **Київ** залишається лідером за рівнем доходів, що зумовлено високою концентрацією компаній сфери послуг та ІТ.  
+* Спостерігається позитивна тенденція у західних регіонах завдяки розвитку логістичних центрів.  
+* Аномально висока середня зарплата в Луганській області у 2025 році (яка може бути навіть вищою за київську) є класичним статистичним винятком, спричиненим певними факторами.
+  
+## Структура репозиторію  
+  
+**Середня-зарплата-в-Україні-за-грудень-2025**/ — Дані проекту  
+├── дані/ — Дані проекту  
+├── зображення/ — Скріншоти проекту  
+├── Ukraine-regions.json — Файл карти, що використовується для візуалізації  
+├── Project.pbix — Основний файл звіту Power BI  
+├── ЛІЦЕНЗІЯ — Ліцензія MIT  
+├── project-logo.png — Обкладинка проекту  
+└── README.md — Документація проекту   
     
-**Name:** [Andrii Isachenko](https://isachenko-andrii.github.io)    
-**LinkedIn:** [Andrii Isachenko](https://www.linkedin.com/in/isachenko-andrii/)  
-**E-mail:** isao.datastudio@gmail.com   
+## Візуалізація  
   
-## Acknowledgments    
-
- - Special thanks to [Nikita Tymoshenko](https://github.com/NickTimosh) for high-quality data analytics [lessons](https://github.com/Youtube-NikitaTymoshenko/PowerBI-UkraineMap/blob/main/README.md) in Ukrainian.
- - Thanks to the [Data Analyst/GoIT](https://goit.global/ua/courses/data-analytics/) course, which was part of this project.
-
----
+![Середня зарплата в Україні](https://github.com/isachenko-andrii/Average-salary-in-Ukraine-for-December-2025/blob/main/images/Average-Salary.png)  
+ 
+## Приклад формули  
   
-**Project Status:** Completed.
+**Назва таблиці:** region_tbl  
+**Назва стовпця з регіонами:** Регіон  
+**Назва стовпця зі значеннями для кожного регіону:** Значення  
+  
+Щоб створити картку, що відображає середню зарплату, ми скористаємося такою формулою:  
+  
+**Формула DAX для кожного регіону виглядатиме так:**  
+  
+<code>Kyiv  lbl =   
+VAR CurrentRegion = "Kyiv"   
+VAR CurrentValue = FORMAT(CALCULATE(SUM(region_tbl[Value]), region_tbl[Region] = CurrentRegion), "#,##0")  
+VAR RegionExists = COUNTROWS(FILTER(region_tbl, region_tbl[Region] = CurrentRegion)) > 0  
+RETURN  
+    IF(RegionExists, IF(ISBLANK(CurrentValue) || CurrentValue = "0", CurrentRegion & ": 0", CurrentValue & " ₴ " ), CurrentRegion & ": No Data")</code>  
     
-**License:** MIT License.   
-
+## Контакти  
+  
+**Автор:** [Андрій Ісаченко](https://isachenko-andrii.github.io)  
+**LinkedIn:** [Андрій Ісаченко](https://www.linkedin.com/in/isachenko-andrii/)  
+**Електронна пошта:** andrii.isachenko@gmail.com  
+ 
+## Подяки  
+  
+- Особлива подяка [Микіті Тимошенко](https://github.com/NickTimosh) за високоякісні [уроки](https://github.com/Youtube-NikitaTymoshenko/PowerBI-UkraineMap/blob/main/README.md) з аналітики даних українською мовою.  
+- Дякую за курс [Аналітик даних/GoIT](https://goit.global/ua/courses/data-analytics/).  
+  
+---  
+  
+**Статус проєкту:** Завершено.  
+  
+**Ліцензія:** Ліцензія MIT.  
+  
